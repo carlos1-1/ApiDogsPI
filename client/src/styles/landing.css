@@ -1,0 +1,94 @@
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(76, 216, 255, 0.8),
+      rgba(30, 108, 217, 0.8)
+    ),
+    url("https://ichef.bbci.co.uk/news/976/cpsprodpb/5899/production/_126418622_gettyimages-175597750-1.jpg");
+
+  background-size: cover;
+  background-position: top;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #eee;
+}
+.container-link {
+  position: relative;
+  margin-right: 101vw;
+}
+.text-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 30px;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 5vw;
+  font-weight: 10px;
+  letter-spacing: 8px;
+}
+.heading-primary-sub {
+  font-size: 3vw;
+  font-weight: 700;
+  letter-spacing: 6.4px;
+}
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1vw 2vw;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.4vw;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
+  font-size: 14px;
+}
+.linkedIn {
+  background-color: rgba(72, 199, 235, 0.8);
+}
+
+@media only screen and (max-width: 700px) {
+  .heading-primary-main {
+    font-size: 10vw;
+  }
+
+  .heading-primary-sub {
+    font-size: 9vw;
+  }
+  .btn:link,
+  .btn:visited {
+    padding: 4vw 9vw;
+    font-size: 4.4vw;
+  }
+}

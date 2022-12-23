@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+}
+
+.input {
+  height: 1.8em;
+  width: 12em;
+  margin-right: 2px;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Sniglet", cursive;
+  font-size: 1em;
+  border: 2px solid rgb(200, 200, 200);
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border-color: rgba(154, 112, 84, 0.9);
+  margin-top: 1.1vw;
+}
+
+.button-search {
+  background: linear-gradient(135deg, #c7e3bc 0%, #298096 100%);
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  letter-spacing: 0.11rem;
+  outline: none;
+}
+.button-search:hover {
+  transform: scale(1.05) translateY(-3px);
+  box-shadow: 3px 3px 6px #38373785;
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    display: inline-flex;
+    padding: 80vw 0vw 0vw 50vw;
+  }
+
+  .input {
+    margin-bottom: 1.5em;
+  }
+
+  .button {
+    margin-bottom: 1.5em;
+    padding: 0px 5px;
+  }
+}

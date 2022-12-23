@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+.father {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 60px 0;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.profile-container {
+  min-width: 200px;
+  flex: 350px;
+  height: 300px;
+}
+.profile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 40px;
+  left: 45px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid rgb(150, 178, 209);
+  transition: 0.3s;
+  background-repeat: no-repeat;
+  background-position: -35px 0px;
+  background-size: 280px 200px;
+}
+.cont {
+  position: relative;
+  width: 300px;
+  height: 640px;
+  background: url("https://i.pinimg.com/736x/a7/81/30/a781301bc00515dd5a1d74d1dc798503.jpg");
+  border-radius: 2%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+.profile:hover {
+  position: absolute;
+  justify-content: center;
+  top: 35px;
+  left: 40px;
+  border: 10px solid rgb(150, 200, 220);
+  transition: 0.3s;
+}
+.info {
+  position: absolute;
+  justify-content: center;
+  top: 250px;
+  left: 20px;
+  width: 260px;
+  height: 200px;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.info h5 {
+  color: #7a79b3;
+}
+body {
+  background: url("data:image/jpeg;base64,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");
+  background-size: cover;
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+}
